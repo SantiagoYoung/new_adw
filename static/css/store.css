@@ -1,0 +1,72 @@
+#content{
+    width:1000px;
+    margin:0 auto;
+    margin-top:5px;
+}
+#contentmain{
+    margin-top:20px;
+    border:1px solid #ddd;
+
+}
+#strinformatioon{
+    margin-left:170px;
+}
+#cominformation{
+    margin-left:170px;
+}
+#strinformatioon h1{
+    margin-top:5px;
+    font-size:30px;
+    margin-bottom:15px;
+}
+#strinformatioon .title{
+    display:inline-block;
+    text-align:right;
+    width:13%;
+    margin-right:20px;
+    font-size:14px;
+
+}
+#cominformation .title{
+    display:inline-block;
+    text-align:right;
+    width:13%;
+    margin-right:20px;
+    font-size:14px;
+}
+#strinformatioon div{
+    margin-bottom:15px;
+}
+#cominformation div{
+    margin-bottom:15px;
+}
+#strinformatioon input{
+    height:22px;
+    width:155px;
+}
+#cominformation input{
+    height:22px;
+    width:155px;
+}
+#strinformatioon select{
+    height:22px;
+}
+#strinformatioon textarea{
+    width:500px;
+    height:200px;
+}
+#cominformation textarea{
+    width:500px;
+    height:200px;
+}
+#cominformation h1{
+    margin-top:5px;
+    font-size:30px;
+    margin-bottom:15px;
+}
+#submit{
+   padding-bottom:15px;
+    width:60px;
+    height:30px;
+    margin:0 auto;
+}

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../static/css/basic.css" type="text/css">
+    <link rel="stylesheet" href="../../static/css/register.css" type="text/css">
+    <script typet="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="nav">
+        <div id="navleft">
+            <ul>
+                <li> <a href="#">嗨，欢迎来到爱定网！</a></li>
+                <li id="login"><a href="login.html">亲，请登录</a></li>
+                <li><a href="register.html">免费注册</a></li>
+            </ul>
+    </div>
+        <div id="navright">
+            <ul>
+                <li> <a href="#">联系客服</a></li>
+                <li> <a href="collection.html"><img src="../../static/images/u356.png">收藏</a></li>
+                <li> <a href="myidw.html">我的爱定网</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="header">
+        <div id="headerleft">
+            <img src="../../static/images/u369.png" style="width:160px;height:65px;">
+        </div>
+        <div id="headerright">
+            <div id="headerrighttext">
+                <ul>
+                    <li id="headerrighttext1">商品</li>
+                    <li id="headerrighttext2">店铺</li>
+                </ul>
+            </div>
+            <div id="headerrightform">
+                <input type="text" name="search" value="请输入需要搜索的内容">
+            </div>
+            <div id="btn-search">
+                <button  value="btn" name="btn">搜索</button>
+            </div>
+        </div>
+        <div id="headerfoot">
+            <div id="headerfoot1">
+                <ul >
+                    <li id="dingzhi"><a href="index.html">在线定制</a></li>
+                    <li><a href="store.html">店铺入驻</a></li>
+                    <li><a href="question.html">定制问问</a></li>
+                </ul>
+            </div>
+            <div id="headerfoot2">
+                <ul >
+                    <li><a href="#">包包定制</a></li>
+                    <li><a href="#">配饰定制</a></li>
+                    <li><a href="#">服装定制</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="content">
+        <form id="person_reg" >
+        <div id="content2">
+        <div>
+            <label for="email" class="title">邮箱</label>
+            <input type="text" name="email" id="email" value="">
+        </div>
+        <div>
+            <label class="title" for="qq">QQ</label>
+            <input type="text" name="qq"  id="qq" value="">
+        </div>
+        <div>
+            <label class="title" for="nickname">昵称</label>
+            <input type="text" name="nickname" id="nickname" value="">
+        </div>
+        <!--<div>-->
+            <!--<label class="title" for="phoneNum">电话号码</label>-->
+           <!--&lt;!&ndash;<input type="text" name="number" id="phoneNum" value="">-->
+        <!--</div>-->
+        <div>
+            <label class="title" for="passcode">登录密码</label>
+            <input type="text" name="code" id="passcode" value="">
+        </div>
+        <div>
+            <label class="title" for="confirm_code">确认密码</label>
+            <input type="password" name="confirmcode" id="confirm_code" value="">
+        </div>
+        <div id="zhuce" >
+            <button   type="submit" name="register" value="提交">注册</button>
+        </div>
+        </div>
+    </form>
+
+
+    <div id="footer">
+        <div id="footer2">
+            <dl id="contact">
+                <dt id="kefu"><img src="../../static/images/u312.png" style="width:30px;height:30px">爱定网客服热线</dt>
+                <dd id="phone">028-84340607</dd>
+                <dd>在线咨询<img src="../../static/images/u320.png"></dd>
+                <dd>周一至周日 <span>09:00-22:00</span> </dd>
+            </dl>
+            <dl >
+                <dt class="help">用户帮助</dt>
+                <dd>意见反馈</dd>
+                <dd>法律声明</dd>
+                <dd>服务协议</dd>
+            </dl>
+        <dl >
+            <dt class="help">关于我们</dt>
+            <dd>关于我们</dd>
+            <dd>联系我们</dd>
+            <dd>商家推广</dd>
+        </dl>
+        <dl>
+            <dt class="help">关注我们</dt>
+            <dd>新浪微博</dd>
+            <dd>qq空间</dd>
+        </dl>
+        <dl >
+            <dt class="help">爱定网官方微信号</dt>
+            <dd> <img src="../../static/images/u310.jpg" style="width:120px;height:120px"></dd>
+        </dl>
+    </div>
+    <div id="footer3">
+        <p id="p1">友情链接:</p>
+        <p id="p2">Copyright @ 2013爱定网 All Right Reserved</p>
+    </div>
+</div>
+<script>
+    var change1=document.getElementById("headerrighttext1");
+    var change2=document.getElementById("headerrighttext2");
+    change1.style.background="red";
+    change1.style.color="white";
+    var btn_click=1;
+    var mouse_over_btn1=function(){
+        change1.style.background="white";
+        change1.style.color="red";
+    }
+    var mouse_out_btn1=function(){
+        if(btn_click=1){
+            change1.style.background="red";
+            change1.style.color="white";
+        }
+        else{
+            change1.style.background="white";
+            change1.style.color="black";
+        }
+    }
+    var click_btn1=function(){
+        btn_click==1;
+        change1.style.background="red";
+        change1.style.color="white";
+        change2.style.background="white";
+        change2.style.color="black";
+    }
+    var mouse_over_btn2=function(){
+        change2.style.background="white";
+        change2.style.color="red";
+    }
+    var mouse_out_btn2=function(){
+        if(btn_click==2){
+            change2.style.background="red";
+            change2.style.color="white";
+        }
+        else{
+            change2.style.background="white";
+            change2.style.color="black";
+        }
+    }
+    var click_btn2=function(){
+        btn_click=2;
+        change2.style.background="red";
+        change2.style.color="white";
+        change1.style.background="white";
+        change1.style.color="black";
+    }
+    change1.onclick=click_btn1;
+    change1.onmouseover=mouse_over_btn1;
+    change1.onmouseout= mouse_out_btn1;
+    change2.onclick=click_btn2;
+    change2.onmouseover=mouse_over_btn2;
+    change2.onmouseout= mouse_out_btn2;
+
+//post
+    $("#person_reg").bind("submit",function(){
+    login()
+     return false
+    });
+    function login(){
+        var email=document.getElementById("email").value;
+        var qq=document.getElementById("qq").value;
+        var nickname=document.getElementById("nickname").value;
+       // var phone=document.getElementById("phoneNum").value;
+        var passcode=document.getElementById("passcode").value;
+        var confirm_code=document.getElementById("confirm_code").value;
+
+        var user={
+            username:email,
+            password:passcode,
+            nickname:nickname,
+            //username:phone,
+            qq:qq,
+            confirm:confirm_code
+        }
+        $.ajax({
+          url:"http://192.168.0.100:8080/account/register/",
+            url:"/account/register/",
+
+            //data:JSON.stringify(user),
+            data:user,
+            type:"post",
+            datatype:"json",
+            contenttype:"application/json",
+            success:function(data){
+                if(data.status==0){
+                    alert(data.message);
+                }
+                else if(data.status==1){
+                    alert(data.message)
+                }
+            }
+        })
+    }
+</script>
+</body>
+</html>

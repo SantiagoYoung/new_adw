@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../static/css/index.css" type="text/css">
+    <script typet="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<body>
+
+<div id="nav">
+    <div id="navleft">
+        <ul>
+            <li> <a href="#">嗨，欢迎来到爱定网！</a></li>
+            <li id="login"><a href="login.html">亲，请登录</a></li>
+            <li><a href="register.html">免费注册</a></li>
+        </ul>
+    </div>
+    <div id="navright">
+        <ul>
+            <li> <a href="#">联系客服</a></li>
+            <li> <a href="collection.html"><img src="../../static/images/u356.png">收藏</a></li>
+            <li> <a href="myidw.html">我的爱定网</a></li>
+        </ul>
+    </div>
+</div>
+<div id="header">
+    <div id="headerleft">
+        <img src="../../static/images/u369.png" style="width:160px;height:65px;">
+    </div>
+    <div id="headerright">
+        <div id="headerrighttext">
+            <ul>
+                <li id="headerrighttext1" onclick="click_btn_1()">商品</li>
+                <li id="headerrighttext2" onclick="click_btn_2()">店铺</li>
+            </ul>
+        </div>
+        <div id="headerrightform">
+            <input type="text" name="search" value="请输入需要搜索的内容">
+        </div>
+        <div id="btn-search">
+            <button  value="btn" name="btn">搜索</button>
+        </div>
+    </div>
+    <div id="headerfoot">
+        <div id="headerfoot1">
+            <ul >
+                <li id="dingzhi"><a href="index.html">在线定制</a></li>
+                <li><a href="store.html">店铺入驻</a></li>
+                <li><a href="question.html">定制问问</a></li>
+            </ul>
+        </div>
+        <div id="headerfoot2">
+            <ul id="headerfoot2_ul">
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="picture">
+    <img src="../../static/images/u369.png">
+</div>
+
+
+<div id="content">
+
+    </div>
+    <div id="content5"></div>
+
+<div id="footer">
+    <div id="footer2">
+        <dl id="contact">
+            <dt id="kefu"><img src="../../static/images/u312.png" style="width:30px;height:30px">爱定网客服热线</dt>
+            <dd id="phone">028-84340607</dd>
+            <dd>在线咨询<img src="../../static/images/u320.png"></dd>
+            <dd>周一至周日 <span>09:00-22:00</span> </dd>
+        </dl>
+        <dl >
+            <dt class="help">用户帮助</dt>
+            <dd>意见反馈</dd>
+            <dd>法律声明</dd>
+            <dd>服务协议</dd>
+        </dl>
+        <dl >
+            <dt class="help">关于我们</dt>
+            <dd>关于我们</dd>
+            <dd>联系我们</dd>
+            <dd>商家推广</dd>
+        </dl>
+        <dl>
+            <dt class="help">关注我们</dt>
+            <dd>新浪微博</dd>
+            <dd>qq空间</dd>
+        </dl>
+        <dl >
+            <dt class="help">爱定网官方微信号</dt>
+            <dd> <img src="../../static/images/u310.jpg" style="width:120px;height:120px"></dd>
+        </dl>
+    </div>
+    <div id="footer3">
+        <p id="p1">友情链接:</p>
+        <p id="p2">Copyright @ 2013爱定网 All Right Reserved</p>
+    </div>
+</div>
+<script type="text/javascript">
+   var change1= document.getElementById("headerrighttext1");
+    var change2= document.getElementById("headerrighttext2");
+    change1.style.background='red';
+    change1.style.color='white';
+    var btn_click=1;   //1:btn1 clicked, 2:btn2 clicked
+    var mouse_over_btn_1=function(){
+        console.log("mouse_over_btn_1");
+        change1.style.background='white';
+        change1.style.color='red';
+    }
+    var mouse_out_btn_1=function(){
+        console.log("mouse_out_btn_1");
+        if(btn_click==1){
+            change1.style.background='red';
+            change1.style.color='white';
+        }else{
+            change1.style.background='white';
+            change1.style.color='black';
+        }
+    }
+    var mouse_over_btn_2=function(){
+        console.log("mouse_over_btn_2");
+        change2.style.background='white';
+        change2.style.color='red';
+    }
+    var mouse_out_btn_2=function(){
+        console.log("mouse_out_btn_2");
+        if(btn_click==2){
+            change2.style.background='red';
+            change2.style.color='white';
+        }else{
+            change2.style.background='white';
+            change2.style.color='black';
+        }
+    }
+    var click_btn_1=function(){
+        console.log("click_btn_1");
+        btn_click=1;
+        change2.style.background='white';
+        change2.style.color='black';
+        change1.style.background='red';
+        change1.style.color='white';
+    }
+    var click_btn_2=function(){
+        console.log("click_btn_2");
+        btn_click=2;
+        change1.style.background='white';
+        change1.style.color='black';
+        change2.style.background='red';
+        change2.style.color='white';
+    }
+
+    change1.onmouseover=mouse_over_btn_1;
+    change1.onmouseout=mouse_out_btn_1;
+    change2.onmouseover=mouse_over_btn_2;
+    change2.onmouseout=mouse_out_btn_2;
+
+   //get
+   $.ajax({
+       type: "GET",
+//       url: "http://192.168.0.101:8080/goods/big_type",
+       url: "http://127.0.0.1:8000/goods/big_type",
+       datatype: "json",
+       success:function(data){
+           var html=document.getElementById("headerfoot2_ul");
+           var strhtml="";
+           var content=document.getElementById("content");
+           var strhtml2="";
+
+
+
+           $.each(data,function(index,el){
+               strhtml+="<li id=\""+el.id+"\"><a onclick='getBookInfo("+el.id+")'>"+el.name+"</a></li>";
+               html.innerHTML=strhtml;
+
+               strhtml2+="<div id=\"content"+el.id+"\"><p><span >"+el.name+"</span><span id=\"content"+el.id+"order\">"+ el.english_name+"</span></p>"
+                   +"<p class=\"border\"></p>"
+                   +"<div id=\"left\"><img class=\"image\"src=\""+el.picture1+"\"></div><div id=\"right\"></div></div>"
+               content.innerHTML=strhtml2;
+
+           })
+       }
+   });
+   /*$.ajax({
+       type: "GET",
+       url: "http://192.168.0.101:8080/goods/small_type/",
+       datatype: "json",
+       success:function(data){
+           var right=document.getElementById("right");
+           var strhtml4="";
+           $.each(data,function(index,el){
+               strhtml4+="<img class=\"image\"src=\"192.168.0.101:8080"+el.picture1+"\">";
+               right.innerHTML=strhtml4;
+           })
+       }
+
+   })*/
+
+   function getBookInfo(id){
+       //alert(id);
+       var user={
+           id:id
+       }
+       $.ajax({
+           type: "post",
+           data:user,
+  //       url: "http://192.168.0.101:8080/goods/small_type/",
+       url: "http://127.0.0.1:8000/goods/small_type/",
+           datatype: "json",
+           success:function(data){
+               $("#picture").empty();
+               $("#content").remove();
+               var picture=document.getElementById("picture");
+               picture.style.cssText="margin:0 auto;width:1000px;margin-top:50px; margin-bottom:50px;text-align: center";
+               var small_type="";
+               $.each(data,function(index,el){
+                   small_type+="<button style=\"width:80px;height:40px;margin:20px;\"id=\""+el.id+"\" onclick='get_detail("+el.id+")'>"+el.name+"<button>"
+                  picture.innerHTML=small_type;
+               })
+           },
+       });
+   }
+    function get_detail(id){
+        var detail={
+            id:id
+        }
+        $.ajax({
+            type:"post",
+            datatype:"json",
+            data:detail,
+  //          url:"http://192.168.0.101:8080/goods/show_goods/",
+            url:"http://127.0.0.1:8000/goods/show_goods/",
+            contenttype:"application/json",
+            success:function(data){
+                var input = document.createElement("div");//添加div
+                input.setAttribute("id", "detail");
+                document.getElementById("picture").appendChild(input);
+                var div_content=document.getElementById("detail");
+                div_content.style.cssText="margin:0 auto;height:350px;width:1000px;border-top:1px solid #aaa;"
+                var good_detail="";
+                $.each(data,function(index,el){
+         //           good_detail+="<img id=\""+el.id+"\"src=\"http://192.168.0.101:8080"+el.picture+"\" onclick='show_goods("+el.id+")'>"+"<p>"+el.description+"</p>";
+                    good_detail+="<img id=\""+el.id+"\"src=\"http://192.168.0.101:8000"+el.picture+"\" onclick='show_goods("+el.id+")'>"+"<p>"+el.description+"</p>";
+                    div_content.innerHTML=good_detail;
+                })
+            }
+        })
+    };
+    function show_goods(id){
+
+        var goods_detail={
+            id:id
+        };
+        $.ajax({
+            type:"post",
+            datatype:"json",
+            data:goods_detail,
+    //        url:"http://192.168.0.101:8080/goods/goods_detail/",
+            url:"http://127.0.0.1:8000/goods/goods_detail/",
+            contenttype:"application/json",
+            success:function(){
+                window.location.href ="goods_detail.html?id="+id;
+            }
+        })
+    };
+
+</script>
+</body>
+</html>

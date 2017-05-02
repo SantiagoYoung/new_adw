@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../static/css/basic.css" type="text/css">
+    <link rel="stylesheet" href="../../static/css/store.css" type="text/css">
+    <script type="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div id="nav">
+        <div id="navleft">
+            <ul>
+                <li> <a href="#">嗨，欢迎来到爱定网！</a></li>
+                <li id="login"><a href="#">亲，请登录</a></li>
+                <li><a href="#">退出登录</a></li>
+            </ul>
+        </div>
+        <div id="navright">
+            <ul>
+                <li> <a href="#">联系客服</a></li>
+                <li> <a href="collection.html"><img src="../../static/images/u356.png">收藏</a></li>
+                <li> <a href="myidw.html">我的爱定网</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="header">
+        <div id="headerleft">
+            <img src="../../static/images/u369.png" style="width:160px;height:65px;">
+        </div>
+        <div id="headerright">
+            <div id="headerrighttext">
+                <ul>
+                    <li id="headerrighttext1">商品</li>
+                    <li id="headerrighttext2">店铺</li>
+                </ul>
+            </div>
+            <div id="headerrightform">
+                <input type="text" name="search" value="请输入需要搜索的内容">
+            </div>
+            <div id="btn-search">
+                <button  value="btn" name="btn">搜索</button>
+            </div>
+        </div>
+        <div id="headerfoot">
+            <div id="headerfoot1">
+                <ul >
+                    <li id="dingzhi"><a href="index.html">在线定制</a></li>
+                    <li><a href="store.html">店铺入驻</a></li>
+                    <li><a href="question.html">定制问问</a></li>
+                </ul>
+            </div>
+            <div id="headerfoot2">
+                <ul >
+                    <li><a href="#">包包定制</a></li>
+                    <li><a href="#">配饰定制</a></li>
+                    <li><a href="#">服装定制</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <form id="store_reg" action="" method="">
+    <div id="content">
+        <div>
+            <p>爱定网是全球第一家专业的服装定制公司平台，汇集了上万家诚信、正规的服装定制公司，免费供您选择！让您足不出户，尽可享受方便快捷的定制服务。</p>
+        </div>
+        <div id="contentmain">
+            <div id="strinformatioon">
+                <h1>店铺信息：</h1>
+                <div><label class="title" for="seller_name">卖家名:</label><input type="text"name="" id="seller_name"></div>
+                <div><div class="title">店铺名称:</div><input type="text"id="store_name" value=""></div>
+                <div><div class="title">手机号:</div><input type="text"id="phone_num" value=""></div>
+                <div><div class="title">qq号:</div><input type="text"id="qq" value=""></div>
+                <div><div class="title">店铺链接地址:</div><input type="text"id="address" value=""></div>
+                <div>
+                    <!--<div class="title">行业类型:</div>
+                    <select id="industry_type" value="">
+                        <option>---------</option>
+                        <option>服装定制</option>
+                        <option>配饰定制</option>
+                        <option>包包定制</option>
+                    </select>
+                </div>-->
+                <div>
+                    <div class="title">行业性质:</div>
+                    <select id="character" value="">
+                        <option value="0">公司</option>
+                        <option value="1">个人</option>
+                    </select>
+                </div>
+                 <div>
+                     <div class="title">店铺类型:</div>
+                     <select id="store_type" value="">
+                         <option value="0">生产（包括材料提供）</option>
+                         <option value="1">设计</option>
+                         <option value="2">私人定制</option>
+                         <option value="3">工装定制</option>
+                     </select>
+                 </div>
+                 <div><div class="title">主营:</div><input type="text"id="main_goods"></div>
+                 <div>
+                     <div  id="strintro"class="title">店铺介绍:</div>
+                     <textarea id="introduction" value=""></textarea>
+                 </div>
+
+            </div>
+            <div id="cominformation">
+                <h1>企业信息：</h1>
+                <div><div class="title">企业logo:</div><input type="file"id="logo" value=""></div>
+                <div><div class="title">企业名称:</div><input type="text"id="company_name" value=""></div>
+                <div><div class="title">企业法人:</div><input type="text"id="com_presenter" value=""></div>
+                <div><div class="title">企业地址:</div><input type="text"id="company_address" value=""></div>
+                <div><div class="title">联系电话:</div><input type="text"id="contact_num" value=""></div>
+                <div><div class="title">企业QQ:</div><input type="text"id="company_qq" value=""></div>
+                <div><div class="title">法人:</div><input type="text"id="present" value=""></div>
+                <div><div class="title">营业执照:</div><input type="file"id="license" value="选择文件"></div>
+                <div><div class="title">企业介绍:</div><textarea id="company_intro" value=""></textarea></div>
+            </div>
+            <div id="submit">
+                <button  type="submit" value="提交">提交</button>
+            </div>
+        </div>
+    </div>
+    </form>
+    <div id="footer">
+        <div id="footer2">
+            <dl id="contact">
+                <dt id="kefu"><img src="../../static/images/u312.png" style="width:30px;height:30px">爱定网客服热线</dt>
+                <dd id="phone">028-84340607</dd>
+                <dd>在线咨询<img src="../../static/images/u320.png"></dd>
+                <dd>周一至周日 <span>09:00-22:00</span> </dd>
+            </dl>
+            <dl >
+                <dt class="help">用户帮助</dt>
+                <dd>意见反馈</dd>
+                <dd>法律声明</dd>
+                <dd>服务协议</dd>
+            </dl>
+            <dl >
+                <dt class="help">关于我们</dt>
+                <dd>关于我们</dd>
+                <dd>联系我们</dd>
+                <dd>商家推广</dd>
+            </dl>
+            <dl>
+                <dt class="help">关注我们</dt>
+                <dd>新浪微博</dd>
+                <dd>qq空间</dd>
+            </dl>
+            <dl >
+                <dt class="help">爱定网官方微信号</dt>
+                <dd> <img src="../../static/images/u310.jpg" style="width:120px;height:120px"></dd>
+            </dl>
+        </div>
+        <div id="footer3">
+            <p id="p1">友情链接:</p>
+            <p id="p2">Copyright @ 2013爱定网 All Right Reserved</p>
+        </div>
+    </div>
+<script>
+    var ip="http://192.168.0.101:8080/";
+    $("#store_reg").bind("submit",function(){
+        register_store()
+        return false
+    })
+    function register_store(){
+      // var seller_name=document.getElementById("seller_name").value;
+        var store_name=document.getElementById("store_name").value;
+        var phone_num=document.getElementById("phone_num").value;
+        //var address=document.getElementById("address").value;
+        var qq=document.getElementById("qq").value;
+        //var industry_type=document.getElementById("industry_type").value;
+        var character=document.getElementById("character").value;
+        var store_type=document.getElementById("store_type").value;
+        //var main_goods=document.getElementById("main_goods").value;
+        var introduction=document.getElementById("introduction").value;
+        var logo=document.getElementById("logo").value;
+        var company_name=document.getElementById("company_name").value;
+        var com_presenter=document.getElementById("com_presenter").value;
+        var company_address=document.getElementById("company_address").value;
+        var contact_num=document.getElementById("contact_num").value;
+        var company_qq=document.getElementById("company_qq").value;
+        //var present=document.getElementById("present").value;
+        var license=document.getElementById("license").value;
+        var company_intro=document.getElementById("company_intro").value;
+        var user={
+            store_name:store_name,
+            phone:phone_num,
+            qq:qq,
+            introduction:introduction,
+            store_style:store_type,
+            company_form:character,
+            head_picture:logo,
+            company_name:company_name,
+            corporation:com_presenter,
+            phone_number:contact_num,
+            address:company_address,
+            company_qq:company_qq,
+            license:license,
+            company_introduction:company_intro
+        }
+        $.ajax({
+            data:user,
+            type:"post",
+            datatype:"json",
+            contenttype:"application/json",
+            url:"http://192.168.0.101:8080/store/store_apply/",
+            success:function(data){
+                alert("hhh")
+            },
+            error:function(){
+                alert("kkk")
+            }
+        })
+    }
+
+
+</script>
+</body>
+</html>

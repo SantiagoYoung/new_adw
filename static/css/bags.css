@@ -1,0 +1,17 @@
+#bags_made button{
+    width:80px;
+    height:40px;
+}
+#bags_made{
+    margin:0 auto;
+    width:1000px;
+    margin-top:50px;
+    margin-bottom:50px;
+    text-align: center;
+}
+#bags_index{
+    margin:0 auto;
+    height:350px;
+    width:1000px;
+    border-top:1px solid #aaa;
+ }

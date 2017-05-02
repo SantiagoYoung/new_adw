@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../static/css/basic.css" type="text/css">
+    <link rel="stylesheet" href="../../static/css/myidw.css" type="text/css">
+    <script type="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div id="nav">
+        <div id="navleft">
+            <ul>
+                <li> <a href="#">嗨，欢迎来到爱定网！</a></li>
+                <li id="login"><a href="#">亲，请登录</a></li>
+                <li><a href="#">退出登录</a></li>
+            </ul>
+        </div>
+        <div id="navright">
+            <ul>
+                <li> <a href="#">联系客服</a></li>
+                <li> <a href="collection.html"><img src="../../static/images/u356.png">收藏</a></li>
+                <li> <a href="myidw.html">我的爱定网</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="header">
+        <div id="headerleft">
+            <img src="../../static/images/u369.png" style="width:160px;height:65px;">
+        </div>
+        <div id="headerright">
+            <div id="headerrighttext">
+                <ul>
+                    <li id="headerrighttext1">商品</li>
+                    <li id="headerrighttext2">店铺</li>
+                </ul>
+            </div>
+            <div id="headerrightform">
+                <input type="text" name="search" value="请输入需要搜索的内容">
+            </div>
+            <div id="btn-search">
+                <button  value="btn" name="btn">搜索</button>
+            </div>
+        </div>
+        <div id="headerfoot">
+            <div id="headerfoot1">
+                <ul >
+                    <li id="dingzhi"><a href="index.html">在线定制</a></li>
+                    <li><a href="store.html">店铺入驻</a></li>
+                    <li><a href="question.html">定制问问</a></li>
+                 </ul>
+            </div>
+         <div id="headerfoot2">
+                <ul >
+                    <li><a href="#">包包定制</a></li>
+                    <li><a href="#">配饰定制</a></li>
+                    <li><a href="#">服装定制</a></li>
+                </ul>
+         </div>
+    </div>
+</div>
+
+<div id="content">
+    <div id="contenttop">
+        <p>爱定网是全球第一家专业的服装定制公司平台，汇集了上万家诚信、正规的服装定制公司，免费供您选择！让您足不出户，尽可享受方便快捷的定制服务。</p>
+    </div>
+    <div id="contentleft">
+        <dl>
+            <dt>账号基本设置</dt>
+            <dd><a href="#">我的资料</a></dd>
+            <dd><a href="#">我的店铺</a></dd>
+            <dd><a href="change_password.html" id="change_password">修改密码</a></dd>
+            <dd><a href="store.html">申请店铺</a></dd>
+        </dl>
+        <dl>
+            <dt><a href="#">销售中心</a></dt>
+            <dd><a href="" id="show_goods">上传商品</a></dd>
+            <dd><a href="#">销售中</a></dd>
+            <dd><a href="#">已销售</a></dd>
+            <dd><a href="#">审核中</a></dd>
+            <dd><a href="#">未通过</a></dd>
+        </dl>
+        <dl>
+            <dt><a href="collection.html">我的收藏</a></dt>
+            <dd><a href="collection_store.html">收藏的店铺</a></dd>
+            <dd><a href="collection.html">收藏的商品</a></dd>
+        </dl>
+        <dl>
+            <dt><a href="#">信息中心</a></dt>
+            <dd><a href="suggestion.html">投诉建议</a></dd>
+            <dd id="systeminfomation"><a href="system_information.html">系统消息</a></dd>
+        </dl>
+    </div>
+    <div id="contentright"><form id="myidw"></form></div>
+</div>
+
+
+
+<div id="footer">
+    <div id="footer2">
+        <dl id="contact">
+            <dt id="kefu"><img src="../../static/images/u312.png" style="width:30px;height:30px">爱定网客服热线</dt>
+            <dd id="phone">028-84340607</dd>
+            <dd>在线咨询<img src="../../static/images/u320.png"></dd>
+            <dd>周一至周日 <span>09:00-22:00</span> </dd>
+        </dl>
+        <dl >
+            <dt class="help">用户帮助</dt>
+            <dd>意见反馈</dd>
+            <dd>法律声明</dd>
+            <dd>服务协议</dd>
+        </dl>
+        <dl >
+            <dt class="help">关于我们</dt>
+            <dd>关于我们</dd>
+            <dd>联系我们</dd>
+            <dd>商家推广</dd>
+        </dl>
+        <dl>
+            <dt class="help">关注我们</dt>
+            <dd>新浪微博</dd>
+            <dd>qq空间</dd>
+        </dl>
+        <dl >
+            <dt class="help">爱定网官方微信号</dt>
+            <dd> <img src="../../static/images/u310.jpg" style="width:120px;height:120px"></dd>
+        </dl>
+    </div>
+    <div id="footer3">
+        <p id="p1">友情链接:</p>
+        <p id="p2">Copyright @ 2013爱定网 All Right Reserved</p>
+    </div>
+</div>
+<script>
+    var change1=document.getElementById("headerrighttext1");
+    var change2=document.getElementById("headerrighttext2");
+    change1.style.background="red";
+    change1.style.color="white";
+    var btn_click=1;
+    var mouse_over_btn1=function(){
+        change1.style.background="white";
+        change1.style.color="red";
+    }
+    var mouse_out_btn1=function(){
+        if(btn_click=1){
+            change1.style.background="red";
+            change1.style.color="white";
+        }
+        else{
+            change1.style.background="white";
+            change1.style.color="black";
+        }
+    }
+    var click_btn1=function(){
+        btn_click==1;
+        change1.style.background="red";
+        change1.style.color="white";
+        change2.style.background="white";
+        change2.style.color="black";
+    }
+    var mouse_over_btn2=function(){
+        change2.style.background="white";
+        change2.style.color="red";
+    }
+    var mouse_out_btn2=function(){
+        if(btn_click==2){
+            change2.style.background="red";
+            change2.style.color="white";
+        }
+        else{
+            change2.style.background="white";
+            change2.style.color="black";
+        }
+    }
+    var click_btn2=function(){
+        btn_click=2;
+        change2.style.background="red";
+        change2.style.color="white";
+        change1.style.background="white";
+        change1.style.color="black";
+    }
+    change1.onclick=click_btn1;
+    change1.onmouseover=mouse_over_btn1;
+    change1.onmouseout= mouse_out_btn1;
+    change2.onclick=click_btn2;
+    change2.onmouseover=mouse_over_btn2;
+    change2.onmouseout= mouse_out_btn2;
+
+
+//修改密码
+
+    var content_right=document.getElementById("contentright")
+    $("#change_password").bind("click",function(){
+        click()
+        return false;
+    });
+    function click(){
+       //内容
+
+        var strhtml="<form id=\"change_password\">"
+            +"<div>"
+            +"<div class=\"title\">输入原始密码：</div>"
+            +"<input  id=\"old_password\" type=\"password\"name=\"old_password\" >"
+            +"</div>"
+            +""<div>
+            + "<div class=\"title\">新密码：</div>"
+            +"<input id=\"new_password\" type=\"password\" name=\"new_password\" value=\"\">"
+            +"</div>"
+            +"<div>"
+            + "<div class=\"title\">确认新的密码：</div>"
+            +"<input id=\"confirm_password\" type=\"password\" name=\"confirm_password\" value=\"\">"
+            +"</div>"
+            +"<div id=\"submit\">"
+            +"<button  type=\"submit\" name=\"submit\" value=\"提交\">提交</button>"
+            +"</div>"
+            +"</form>"
+
+        content_right.innerHTML=strhtml;}
+
+        $("#myidw").bind("submit",function(){
+            submit()
+            return false;
+        });
+        function submit(){
+        var old_password=document.getElementById("old_password").value;
+        var new_password=document.getElementById("new_password").value;
+        var confirm_password=document.getElementById("confirm_password").value;
+        var user={
+            old_password:old_password,
+            new_password:new_password,
+            confirm:confirm_password
+        };
+        $.ajax({
+            url:"http://192.168.0.100:8080/account/change_password",
+            type:"post",
+            datatype:"json",
+            contenttype:"application/json",
+            data:user,
+            success:function(){
+                alert("jjj")
+            }
+        })
+    }
+
+//上传商品
+    $("#show_goods").bind("click",function(){
+        show_goods()
+        return false
+    });
+    function show_goods(){
+        //$("#contentright").empty();
+        //var content_right=document.getElementById("contentright");
+        var strhtml="";
+        strhtml="<label>标题</label><input id=''>";
+        content_right.innerHTML=strhtml;
+
+
+    }
+</script>
+</body>
+</html>
